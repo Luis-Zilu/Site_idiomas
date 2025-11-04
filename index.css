@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    background-image: url(imagens/um-por-do-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+select {
+    font-size: 1rem;
+}
+
+.divform1 {
+    width: 180px;
+    align-self: center;
+    text-align: center;
+}
+
+.divform2 {
+    background-color: rgb(20, 243, 247);
+}
+
+.patobone {
+    position: relative;
+    top: 26px;
+}
+
+.main-sign_in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

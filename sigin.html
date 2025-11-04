@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="icon" href="pato.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-image: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main class="main-sign_in">
+        <H1>Regristrar</H1>
+        <br>
+        <div class="botoes">
+            <div>
+                <form method="POST" action="form.php">
+                    <input type="email" name="email" required placeholder="Digite seu Email">
+                    <input type="password" name="pass" required placeholder="Digite sua senha">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <br>
+        <H2>Já tem uma conta?</H2><br><br>
+        <h2 class="entrar">Entrar</H2>
+        <div>
+            <form method="POST" action="form.php">
+                <input type="email" name="email" required placeholder="Digite seu Email">
+                <input type="password" name="pass" required placeholder="Digite sua senha">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        </div><br>
+        <div>
+            <input type="checkbox" id="checkbox" name="oh">
+            <label for="checkbox">Ao clicar Aqui você concorda com os Termos de Uso e com a Política de Privacidade da
+                Rigardo Idiomas.</label><br>
+        </div>
+    </main>
+    <script>
+        function button() {
+            alert("Quack!");
+            window.location.href = "./"//<---Tela inicial
+        }
+    </script>
+</body>
+
+</html>
