@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    background-image: url(imagens/um-por-do-sol.jpg);
+    background-image: url(imagens/fundo-pato-ex.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -26,18 +26,21 @@ select {
 }
 
 .divform1 {
-    width: 180px;
+    width: 330px;
     align-self: center;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .divform2 {
-    background-color: rgb(20, 243, 247);
+    background-color: #2f90ab;
+    height: 480px;
+    border-radius: 20px;
 }
 
 .patobone {
     position: relative;
-    top: 26px;
+    top: 30px;
 }
 
 .main-sign_in {
@@ -45,4 +48,18 @@ select {
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+.button_index{
+    padding: 1px;
+}
+.login_sign{
+    border-radius: 20px;
+    border-style: ridge;
+    width: 1500px;
+    border-width: 5px;
+    background-color: rgb(246, 243, 243);
+}
+.header{
+    display: flex;
+    gap: 320px;
 }
