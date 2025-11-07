@@ -21,21 +21,26 @@ body {
 
 }
 
-select {
-    font-size: 1rem;
-}
+ input, select{
+    width: 30vh;
+  }
 
 .divform1 {
-    width: 330px;
+    width: 45vh;
     align-self: center;
     text-align: center;
     font-size: 1.8rem;
+        align-items: center;
 }
 
 .divform2 {
+    font-size: 1.7rem;
     background-color: #2f90ab;
-    height: 480px;
+    height: 64vh;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .patobone {
@@ -52,6 +57,7 @@ select {
 .button_index{
     padding: 1px;
 }
+--------------------------------------------------------------------------------------------------------------------------------
 .login_sign{
     flex-direction: column;
     display: flex;
@@ -71,16 +77,55 @@ select {
 @media screen and (max-width: 400px) {
     body{
         display: flex;
+        flex-direction: column;
         background-image: none;
         background-color: aqua;
 
     }
     .divform2{
-    width: 200px;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+    width: 45vh;
+    height: 68vh;
+    border-radius: 0;
+    position: relative;
+    left: 0.2vh;
     align-items: center;
   }
-.main-form{
-    display: flex;
-    align-items: center;
+  input, select{
+    width: 30vh;
+  }
+  }
+
+  @media screen and (min-width:400px) and (max-width:665px) {
+    body{
+        background-image: none;
+        background-color: red;
+    }
+    .divform2{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+        height: 66vh;
+        width: 45vh;
+        position: relative;
+align-items: center;
+        left: 0.8vh;
+    }
+     input, select{
+    width: 28vh;
+  }
 }
+.p-acess{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.h2--index{
+    font-size: 2rem;
+}
+.p-e-a{
+    color: rgb(213, 91, 213);
+
 }
