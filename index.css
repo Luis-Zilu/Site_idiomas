@@ -36,7 +36,7 @@ body {
 .divform2 {
     font-size: 1.7rem;
     background-color: #2f90ab;
-    height: 64vh;
+    height: 67vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -53,9 +53,21 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    border: green ridge;
+    width: 140vh;
 }
 .button_index{
     padding: 1px;
+}
+.checkbox-2{
+    display: flex;
+    flex-direction: row;
+}
+.checkbox{
+    width:10px ;
+}
+.acess-signin{
+    width: 60px;
 }
 --------------------------------------------------------------------------------------------------------------------------------
 .login_sign{
@@ -70,11 +82,11 @@ body {
 }
 .header{
     display: flex;
-    gap: 18vh;
+    gap: 30vh;
     align-items: baseline;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     body{
         display: flex;
         flex-direction: column;
@@ -98,7 +110,7 @@ body {
   }
   }
 
-  @media screen and (min-width:400px) and (max-width:665px) {
+  @media screen and (min-width:465px) and (max-width:675px) {
     body{
         background-image: none;
         background-color: red;
