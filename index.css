@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    background-image: url(imagens/fundo-pato-ex.jpg);
+    background-image: url(fotos/fundo-pato-ex.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -55,6 +55,8 @@ body {
     align-items: center;
     border: green ridge;
     width: 140vh;
+        align-self: center;
+    background-color: blueviolet;
 }
 .button_index{
     padding: 1px;
@@ -62,9 +64,11 @@ body {
 .checkbox-2{
     display: flex;
     flex-direction: row;
+    position: relative;
+    left: 22vh;
 }
 .checkbox{
-    width:10px ;
+    width:15px ;
 }
 .acess-signin{
     width: 60px;
@@ -78,6 +82,7 @@ body {
     width: 160vh;
     border-width: 5px;
     background-color: rgb(246, 243, 243);
+    align-items: center;
 
 }
 .header{
@@ -140,4 +145,9 @@ align-items: center;
 .p-e-a{
     color: rgb(213, 91, 213);
 
+}
+.h2--signin{
+    display: flex;
+    position: relative;
+    right: ;
 }
