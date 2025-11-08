@@ -11,54 +11,44 @@
         body {
             display: flex;
             flex-direction: column;
-            background-image: none;
-    background-color: #2f90ab;
+            background-image:linear-gradient(to left, rgb(223, 23, 23), #206f9d);
+            background-color:#256b94;
+            opacity: 0.9;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
         }
     </style>
 </head>
 
 <body>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <main class="main-sign_in">
-
-        <div class="login_sign">
-            
-            <div class="header">
-                <img src="fotos/logo.png" alt="" height="100px" width="300px">
-            <H1>Já tem uma conta?</H2><br><br>
-                </div>
-                <h2 class="entrar">Entrar</H2>
-                <div>
-                    <form method="POST" action="form.php">
-                        <input type="email" name="email" required placeholder="Digite seu Email">
-                        <input type="password" name="pass" required placeholder="Digite sua senha">
-                        <input class="acess-signin" id="button()" type="submit" value="Login">
-                    </form>
-                </div>
-                <br>
-                <div class="checkbox-2">
-                    <input class="checkbox" type="checkbox" required>
-
-                    <p>Ao clicar Aqui você concorda com os Termos de Uso e com a Política de
-                        Privacidade da
-                        Rigardo Idiomas.</p><br>
-                </div>
-        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="main-sign">
+<div class="config-sign">
+    <img src="fotos/anonimo.jpg" alt="Sua foto" width="100px" height="100px" style="border-style: ridge; border-color: rgba(0, 0, 0, 0) ; border-radius: 100%;">
+    <h2>Entrar</h2>
+    <div class="input-div">
+        <input type="text" class="input-sign" placeholder="Digite seu Email">
+    <input type="password" class="input-sign" placeholder="Digite sua senha">
+    </div>
+    <div class="check-sign">
+    <input type="checkbox" style="width: 30px;">
+    <p>Certifico ser maior de 18 anos para o contato e estou ciente da Política de Privacidade da instituição.</p>
+    </div>
+    <h2>Não possui um login?</h2>
+    <a class="cadastro" href="./index.html">Cadastre-se</a>
+</div>
     </main>
-    <script>
-        function button() {
-            window.location.href = "./#"
-        }
-    </script>
+
 </body>
 
 </html>

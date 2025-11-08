@@ -3,18 +3,6 @@
     text-decoration: none;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    background-image: url(fotos/fundo-pato-ex.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .main-form {
     display: flex;
     flex-direction: column;
@@ -36,7 +24,7 @@ body {
 .divform2 {
     font-size: 1.7rem;
     background-color: #2f90ab;
-    height: 67vh;
+    height: 54vh;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -47,48 +35,52 @@ body {
     position: relative;
     top: 30px;
 }
-
-.main-sign_in {
+.main-sign{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.config-sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: rgba(78, 188, 166, 0.714);
+width: 60vh;
+height: fit-content;
+gap: 1vh;
+border: rgba(255, 255, 255, 0) ridge;
+border-radius: 10%;
+}
+.input-sign{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    color: black;
+    font-size: 1.6rem;
     text-align: center;
-    align-items: center;
-    border: green ridge;
-    width: 140vh;
-        align-self: center;
-    background-color: blueviolet;
+    border-bottom: black ridge;
 }
-.button_index{
-    padding: 1px;
+input::placeholder{
+    color: black;
 }
-.checkbox-2{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 22vh;
-}
-.checkbox{
-    width:15px ;
-}
-.acess-signin{
-    width: 60px;
-}
---------------------------------------------------------------------------------------------------------------------------------
-.login_sign{
-    flex-direction: column;
-    display: flex;
-    border-radius: 20px;
-    border-style: ridge;
-    width: 160vh;
-    border-width: 5px;
-    background-color: rgb(246, 243, 243);
-    align-items: center;
 
-}
-.header{
+.input-div{
     display: flex;
-    gap: 30vh;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+.check-sign{
+    display: flex;
+align-items: baseline;
+}
+.cadastro{
+    font-size: 1.5rem;
+    color: rgb(112, 8, 114);
+}
+.cadastro:hover{
+    padding: auto;
+    border-left: ridge rgb(64, 0, 255);
+    border-right: rgb(64, 0, 255) ridge;
 }
 
 @media screen and (max-width: 450px) {
@@ -141,13 +133,4 @@ align-items: center;
 }
 .h2--index{
     font-size: 2rem;
-}
-.p-e-a{
-    color: rgb(213, 91, 213);
-
-}
-.h2--signin{
-    display: flex;
-    position: relative;
-    right: ;
 }
