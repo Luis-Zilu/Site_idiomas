@@ -9,16 +9,17 @@
 
 }
 
- input, select{
+input,
+select {
     width: 42vh;
-  }
+}
 
 .divform1 {
     width: 45vh;
     align-self: center;
     text-align: center;
     font-size: 1.8rem;
-        align-items: center;
+    align-items: center;
 }
 
 .divform2 {
@@ -35,24 +36,26 @@
     position: relative;
     top: 30px;
 }
-.main-sign{
+
+.main-sign {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.config-sign{
+.config-sign {
     display: flex;
     flex-direction: column;
     align-items: center;
-background-color: rgba(78, 188, 166, 0.714);
-width: 60vh;
-height: fit-content;
-gap: 1vh;
-border: rgba(255, 255, 255, 0) ridge;
-border-radius: 10%;
+    background-color: rgba(78, 188, 166, 0.714);
+    width: 60vh;
+    height: fit-content;
+    gap: 1vh;
+    border: rgba(255, 255, 255, 0) ridge;
+    border-radius: 10%;
 }
-.input-sign{
+
+.input-sign {
     background-color: rgba(255, 0, 0, 0);
     border: none;
     color: black;
@@ -60,77 +63,106 @@ border-radius: 10%;
     text-align: center;
     border-bottom: black ridge;
 }
-input::placeholder{
+
+input::placeholder {
     color: black;
 }
 
-.input-div{
+.input-div {
     display: flex;
     flex-direction: column;
     gap: 1.5vh;
 }
-.check-sign{
+
+.check-sign {
     display: flex;
-align-items: baseline;
+    align-items: baseline;
 }
-.cadastro{
+
+.cadastro {
+    position: relative;
+    left: -1vh;
     font-size: 1.5rem;
     color: rgb(112, 8, 114);
 }
-.cadastro:hover{
+
+.cadastro:hover {
     padding: auto;
     border-left: ridge rgb(64, 0, 255);
     border-right: rgb(64, 0, 255) ridge;
 }
 
+.p-acess {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.h2--index {
+    font-size: 2rem;
+}
+
+.button-entrar:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.button-entrar {
+    background-color: rgb(52, 47, 47);
+    color: white;
+    border: none;
+    padding: auto;
+    font-size: 1.2rem;
+
+}
+
 @media screen and (max-width: 450px) {
-    body{
+    body {
         display: flex;
         flex-direction: column;
         background-image: none;
         background-color: aqua;
 
     }
-    .divform2{
+
+    .divform2 {
         font-size: 1.8rem;
         display: flex;
         flex-direction: column;
-    width: 45vh;
-    height: 68vh;
-    border-radius: 0;
-    position: relative;
-    left: 0.2vh;
-    align-items: center;
-  }
-  input, select{
-    width: 30vh;
-  }
-  }
+        width: 45vh;
+        height: 68vh;
+        border-radius: 0;
+        position: relative;
+        left: 0.2vh;
+        align-items: center;
+    }
 
-  @media screen and (min-width:465px) and (max-width:675px) {
-    body{
+    input,
+    select {
+        width: 30vh;
+    }
+}
+
+@media screen and (min-width:465px) and (max-width:675px) {
+    body {
         background-image: none;
         background-color: red;
     }
-    .divform2{
+
+    .divform2 {
         display: flex;
         flex-direction: column;
         font-size: 1.6rem;
         height: 66vh;
         width: 45vh;
         position: relative;
-align-items: center;
+        align-items: center;
         left: 0.8vh;
     }
-     input, select{
-    width: 28vh;
-  }
-}
-.p-acess{
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-.h2--index{
-    font-size: 2rem;
+
+    input,
+    select {
+        width: 28vh;
+    }
+
 }

@@ -11,12 +11,46 @@
         body {
             display: flex;
             flex-direction: column;
-            background-image:linear-gradient(to left, rgb(223, 23, 23), #206f9d);
-            background-color:#256b94;
+            flex-wrap: wrap;
+            background-image: linear-gradient(to left, rgb(223, 23, 23), #206f9d);
+            background-color: #256b94;
             opacity: 0.9;
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
+        }
+
+        @media screen and (max-width:577px) {
+            body {
+                background-image: none;
+                background-color: red;
+            }
+
+            .input-sign {
+                background-color: rgba(255, 0, 0, 0);
+                border: none;
+                color: black;
+                font-size: 1.4rem;
+                text-align: center;
+                border-bottom: black ridge;
+            }
+
+            .input::placeholder {
+                color: black;
+                
+            }
+
+            .cadastro{
+                border-bottom: red double;
+              color: antiquewhite;
+            }
+        }
+
+        @media screen and (min-width:578px) and (max-width:1080px) {
+            body {
+                background-image: none;
+                background-color: orange;
+            }
         }
     </style>
 </head>
@@ -33,22 +67,29 @@
     <br>
     <br>
     <main class="main-sign">
-<div class="config-sign">
-    <img src="fotos/anonimo.jpg" alt="Sua foto" width="100px" height="100px" style="border-style: ridge; border-color: rgba(0, 0, 0, 0) ; border-radius: 100%;">
-    <h2>Entrar</h2>
-    <div class="input-div">
-        <input type="text" class="input-sign" placeholder="Digite seu Email">
-    <input type="password" class="input-sign" placeholder="Digite sua senha">
-    </div>
-    <div class="check-sign">
-    <input type="checkbox" style="width: 30px;">
-    <p>Certifico ser maior de 18 anos para o contato e estou ciente da Política de Privacidade da instituição.</p>
-    </div>
-    <h2>Não possui um login?</h2>
-    <a class="cadastro" href="./index.html">Cadastre-se</a>
-</div>
+        <div class="config-sign">
+            <img src="fotos/anonimo.jpg" alt="Sua foto" width="100px" height="100px"
+                style="border-style: ridge; border-color: rgba(0, 0, 0, 0) ; border-radius: 100%;">
+            <h2>Entrar</h2>
+            <div class="input-div">
+                <input type="email" class="input-sign" placeholder="Digite seu Email">
+                <input type="password" class="input-sign" placeholder="Digite sua senha">
+                <button onclick="entrar()" class="button-entrar">Entrar</button>
+            </div>
+            <div class="check-sign">
+                <input type="checkbox" style="width: 30px;">
+                <p>Certifico ser maior de 18 anos para o contato e estou ciente da Política de Privacidade da
+                    instituição.</p>
+            </div>
+            <h2>Não possui um login?</h2>
+            <a class="cadastro" href="./index.html">Cadastre-se</a>
+        </div>
     </main>
-
+    <script>
+        function entrar() {
+            alert("você entrou")
+        }
+    </script>
 </body>
 
 </html>
