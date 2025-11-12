@@ -7,6 +7,8 @@
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="fotos/icon.png">
+    <script defer src="./index.js"></script>
+
     <style>
         body {
             display: flex;
@@ -30,7 +32,7 @@
             <img class="patobone" src="./fotos/tiosam2.png" width="150px" height="150px">
             <div class="divform2">
                 <p>Nome:</p>
-                <input type="text" placeholder="Digite seu Nome">
+                <input type="text" id="var" placeholder="Digite seu Nome">
                 <p>Curso Desejado:</p>
                 <label for="Idioma"></label>
                 <select name="Idioma" id="Idioma">
@@ -73,18 +75,11 @@
                 <p>Horario:</p>
                 <div class="button__index"></div>
                 <input type="time" style="width: auto;">
-                <button onclick="nossa()" class="button_index">Acessar</button>
+                <button onclick="onamewa()" class="button_index">Acessar</button>
             </div>
 
         </div>
         </div>
-
-        <script>
-            function nossa() {
-                alert("Quack!");
-                window.location.href = "./index.html"
-            }
-        </script>
 
     </main>
 </body>
